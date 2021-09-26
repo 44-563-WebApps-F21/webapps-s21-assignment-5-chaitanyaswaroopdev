@@ -15,60 +15,77 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <meta charset="utf-8">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-    
+
     <style>
         .label {
             color: white;
             padding: 8px;
             font-family: Arial;
         }
-        .success {background-color: brown;}
+
+        .success {
+            background-color: brown;
+        }
     </style>
+    <script >
+function submitFunction(){
+   var emailId= document.getElementById("exampleInputEmail1").value;
+   var animalName =document.getElementById("animalName").value;
+   var check=document.getElementById("exampleCheck1").checked;
+   alert("Email :"+emailId+" \n"+"Animal :"+animalName+" \n"+"Singup for news letter? "+check);
+}
+    </script>
 </head>
 
 <body>
     <!-- --------------------------------------------------------------------------------------------------------------- -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light class=" navbar navbar-light"
+        style="background-color: #e3f2fd; color: black;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Interesting Animals</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="animals.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="plane.html">Plane</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="train.html">Train</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Other pages
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="plane.html">Plane</a></li>
-                  <li class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="train.html">Train</a></li>
+            <a class="navbar-brand" href="#">Interesting Animals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="animals.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plane.html">Plane</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="train.html">Train</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Other pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="plane.html"
+                                    style="background-color: aquamarine;">Plane</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="train.html" style="background-color: bisque;">Train</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <!-- --------------------------------------------------------------------------------------------------------------- -->
     <h1>"Animals by" Chaitanya Swaroop Udata</h1>
@@ -92,7 +109,8 @@
     </div>
     <br>
     <p style="font-size: large;">
-        &nbsp; When we try to reduce the size of the window the first row which breaks is Names of the animal, if we keep
+        &nbsp; When we try to reduce the size of the window the first row which breaks is Names of the animal, if we
+        keep
         on going to reduce the window the next row is letters.
     </p>
     <br>
@@ -108,56 +126,56 @@
     </div>
     <br>
 
-    <table class="table table-bordered table-hover table-sm">
+    <table class="table table-bordered table-hover table-sm" style="border: 2px;">
         <p style="font-size: larger;">&nbsp; The following table describes about the 6 different animals followed by Cit
             ies and Cars names starts from animals initial letter.</p>
-        <thead style="text-align: center; border: 1rem;" class="table-dark">
+        <thead style="text-align: center; border: 2px;" class="table-dark">
             <tr style="text-align: center;">
-                <th scope="col" style="text-align: center;">Letter</th>
+                <th scope="col" style="text-align: center; border: 2px;">Letter</th>
                 <th scope="col" style="text-align: center;">Animal</th>
                 <th scope="col" style="text-align: center;">City</th>
                 <th scope="col" style="text-align: center;">Car</th>
             </tr>
         </thead>
-        <tbody style="text-align: center;">
-            <tr class="table-primary">
+        <tbody style="text-align: center; border: 2px;">
+            <tr class="table-primary" style="border: 2px;">
                 <th scope="row" style="text-align: center;">U</th>
                 <td>Urial</td>
                 <td>Ukraine</td>
                 <td>Ultima</td>
             </tr>
-            <tr class="table-secondary">
+            <tr class="table-secondary" style="border: 2px;">
                 <th scope="row" style="text-align: center;">D</th>
                 <td>Dog</td>
                 <td>Delhi</td>
                 <td>Dodge</td>
             </tr>
-            <tr class="table-success">
+            <tr class="table-success" style="border: 2px;">
                 <th scope="row" style="text-align: center;">A</th>
                 <td>Alligator</td>
                 <td>America</td>
                 <td>Alfaromeo</td>
             </tr>
-            <tr class="table-danger">
+            <tr class="table-danger" style="border: 2px;">
                 <th scope="row" style="text-align: center;">T</th>
                 <td>Tiger</td>
                 <td>Titan</td>
                 <td>Toyoto</td>
             </tr>
-            <tr class="table-warning">
+            <tr class="table-warning" style="border: 2px;">
                 <th scope="row" style="text-align: center;">C</th>
                 <td>Cat</td>
                 <td>Chennai</td>
                 <td>chevorlet</td>
             </tr>
-            <tr class="table-info">
+            <tr class="table-info" style="border: 2px;">
                 <th scope="row" style="text-align: center;">H</th>
                 <td>Horse</td>
                 <td>Huston</td>
                 <td>Honda</td>
             </tr>
         </tbody>
-    </table> 
+    </table>
     <br>
     <br>
 
@@ -184,20 +202,46 @@
 
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
         <div class="btn-group" role="group">
-          <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <li><a class="dropdown-item" href="plane.html">Plane</a></li>
-            <li class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="train.html">Train</a></li>
-          </ul>
+            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li><a class="dropdown-item" href="plane.html">Plane</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="train.html">Train</a></li>
+            </ul>
         </div>
-      </div>
+    </div>
 
-      <br>
-      <br>
+    <br>
+    <br>
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
 
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">&nbsp;Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">&nbsp;We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="Animal-label" for="animalName" class="form-label">&nbsp;Enter your animal</label>
+            <input type="text" id="animalName" class="form-control">
+        </div>
+        
+        <div class="form-check">
+            <label class="form-check-label" for="exampleCheck1">Sign up for newsletter? </label>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary" onclick="submitFunction()">Submit</button>
+        <br>
+    </form>
+    <br>
+
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
 </body>
 
 </html>
